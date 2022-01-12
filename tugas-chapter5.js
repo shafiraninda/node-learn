@@ -3,6 +3,6 @@ const fs = require('fs')
 
 const cpuInfo = os.cpus()
 fs.writeFile('./info-cpu.json',
-JSON.stringify(cpuInfo), (err) => {
-    if (err) throw err;
+JSON.stringify(cpuInfo), (error) => {
+    if (error) throw error;
 });
